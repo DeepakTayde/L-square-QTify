@@ -1,0 +1,39 @@
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 24px;
+
+}
+
+.sectionHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0;
+    
+}
+.sectionTitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-white);
+    font-family: 'Poppins', sans-serif;
+}
+.sectionButton{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-primary);
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.sectionContent{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(159px, 1fr));
+    gap: 24px;
+    padding: 0;
+}
