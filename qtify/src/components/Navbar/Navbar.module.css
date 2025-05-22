@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #34c94b; /* Set your primary color here */
+}
+
+.navbar {
+  background-color: var(--color-primary);
+  height: 74px;
+  padding: 0px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
