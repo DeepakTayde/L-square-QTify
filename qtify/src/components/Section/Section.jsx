@@ -7,7 +7,7 @@ import axios from 'axios';
 
 const Section = ({ endpoint,  sectionType}) => {
 const [albums, setAlbums] = useState([]);
-const [showAll, setShowAll] = useState(false);
+const [showAll, setShowAll] = useState(true);
 const [loading, setLoading] = useState(true);
 
 
@@ -26,7 +26,7 @@ useEffect(() => {
     fetchData();
 },[endpoint])
 
-const showAlbums = showAll ? albums : albums.slice(0, 8);
+const showAlbums = showAll ? albums : albums.slice(0, 7);
 
   return (
 
