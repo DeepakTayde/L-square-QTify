@@ -3,9 +3,9 @@ import Styles from "./Card.module.css";
 import { Chip } from "@mui/material";
 
 
-const Card = ({album, section}) => {
-  console.log("Card component data:>>", album);
-  console.log("Card component section:>>", section);
+const Card = ({album}) => {
+
+
   return (
     <div className={Styles.card}>
       <div className={Styles.cardHeader}>

@@ -1,12 +1,14 @@
-import React from "react";
+import React from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-
 import Section from "./components/Section/Section"; // Adjust the path as necessary
 
+
 function App() {
+
+
   return (
     <div>
       <header>
@@ -15,8 +17,12 @@ function App() {
       </header>
 
       <main>
-        {/* Add your main content here */}
-        <Section />
+
+
+            <Section   endpoint={"https://qtify-backend-labs.crio.do/albums/top"} sectionType={"Top Albums"} />
+            <Section   endpoint={"https://qtify-backend-labs.crio.do/albums/new"} sectionType={"New Albums"} />
+
+
       </main>
 
       <footer>
